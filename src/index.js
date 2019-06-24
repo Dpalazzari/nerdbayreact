@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ButtonMenu from './components/ButtonMenu'
-import clone from './helpers/clone'
-import classSetter from './helpers/classSetter'
+import { clone, classSetter } from './helperFunctions/helpers'
 import './index.css';
 
 class Bay extends React.Component {
