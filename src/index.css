@@ -1,15 +1,59 @@
 .status-button {
-  background-color: lightskyblue;
+  background-color: rgb(218, 64, 64);
   font-family: "Courier New";
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
   width: 100%;
-  border-radius: 5px;
+  height: 80px;
+  border: 1px solid black;
+  border-bottom-color: transparent;
+  border-radius: 10px;
+}
+
+.status-button-movie {
+  background-color: rgb(218, 64, 64);
+  font-family: "Courier New";
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.clicked-status-button{
+  background-color: grey;
+}
+
+.status-button:focus {
+  outline: none;
+}
+
+.status-button:hover {
+  background-color: rgb(179, 171, 72);
+}
+
+.status-button-movie:hover {
+  background-color: rgb(179, 171, 72);
+}
+
+.clicked-status-button:hover{
+  background-color: rgb(179, 171, 72);
+}
+
+.status-button-movie:focus {
+  outline: none;
 }
 
 .button-menu {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
 }
 
 .bay-body {
-  background-color: darkgray;
+  background-color: rgb(12, 12, 12);;
 }
