@@ -9,11 +9,11 @@ class Bay extends React.Component {
     super(props)
     this.state = {
       twitch: false,
-      topTwitch: false,
+      top: false,
       espn: false,
       ign: false,
       movies: false,
-      hackerNews: false,
+      hacker: false,
       reddit: false,
       weather: false
     }
@@ -23,48 +23,20 @@ class Bay extends React.Component {
     const buttonValue = i.target.value;
     let stateObj, bool;
     switch (buttonValue){
-      case 'top-twitch':
-        stateObj = clone(this.state);
-        bool = stateObj.topTwitch;
-        stateObj.topTwitch = !bool;
-        break;
+      case 'top':
       case 'twitch':
-        stateObj = clone(this.state);
-        bool = stateObj.twitch;
-        stateObj.twitch = !bool;
-        break;
       case 'espn':
-        stateObj = clone(this.state);
-        bool = stateObj.espn;
-        stateObj.espn = !bool;
-        break;
       case 'hacker':
-        stateObj = clone(this.state);
-        bool = stateObj.hackerNews;
-        stateObj.hackerNews = !bool;
-        break;
       case 'reddit':
-        stateObj = clone(this.state);
-        bool = stateObj.reddit;
-        stateObj.reddit = !bool;
-        break;
       case 'ign':
-        stateObj = clone(this.state);
-        bool = stateObj.ign;
-        stateObj.ign = !bool;
-        break;
       case 'weather':
-        stateObj = clone(this.state);
-        bool = stateObj.weather;
-        stateObj.weather = !bool;
-        break;
       case 'movies':
         stateObj = clone(this.state);
-        bool = stateObj.movies;
-        stateObj.movies = !bool;
+        bool = stateObj[buttonValue];
+        stateObj[buttonValue] = !bool;
         break;
       default:
-
+        stateObj = clone(this.state);
     }
     this.setState(stateObj);
     classSetter(!bool, i)
