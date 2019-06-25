@@ -10,6 +10,13 @@
   border-bottom-color: transparent;
 }
 
+.top-twitch {
+  font-family: "Courier New";
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
 .status-button-movie {
   background-color: rgb(196, 64, 64);
   font-family: "Courier New";
@@ -54,4 +61,14 @@
 
 .bay-body {
   background-color: rgb(12, 12, 12);;
+}
+
+.bay {
+  display: flex;
+}
+
+.component-renderings {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }

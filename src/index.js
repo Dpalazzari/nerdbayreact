@@ -42,11 +42,65 @@ class Bay extends React.Component {
     classSetter(!bool, i)
   }
 
-  render(){
+  top(){
     return (
-      <div className='bay'>
-        <div>
+      <p className='top-twitch'>Top Twitch State is true</p>
+    )
+  }
+
+  hacker(){
+    return (
+      <p className='top-twitch'>Hacker News State is true</p>
+    )
+  }
+
+  twitch(){
+    return (
+      <p className='top-twitch'>Twitch State is true</p>
+    )
+  }
+
+  reddit(){
+    return (
+      <p className='top-twitch'>Reddit State is true</p>
+    )
+  }
+
+  espn(){
+    return (
+      <p className='top-twitch'>ESPN State is true</p>
+    )
+  }
+
+  movies(){
+    return (
+      <p className='top-twitch'>Movies State is true</p>
+    )
+  }
+
+  ign(){
+    return (
+      <p className='top-twitch'>IGN State is true</p>
+    )
+  }
+
+  weather(){
+    return (
+      <p className='top-twitch'>Weather State is true</p>
+    )
+  }
+
+  render(){
+    const dataComponents = Object.keys(this.state).map(value => {
+      return (this.state[value]) ? this[value]() : <p></p>
+    })
+    return (
+      <div>
+        <div className='bay'>
           <ButtonMenu onClick={(i) => this.handleClick(i)}/>
+          <div className='component-renderings'>
+            {dataComponents}
+          </div>
         </div>
       </div>
     );
