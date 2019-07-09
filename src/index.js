@@ -43,50 +43,58 @@ class Bay extends React.Component {
   }
 
   top(){
+    let str = `The Top Twitch state is ${this.state.top}`
     return (
-      <p className='top-twitch'>Top Twitch State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 
   hacker(){
+    let str = `The Hacker News state is ${this.state.hacker}`
     return (
-      <p className='top-twitch'>Hacker News State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 
   twitch(){
+    let str = `The Twitch state is ${this.state.twitch}`
     return (
-      <p className='top-twitch'>Twitch State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 
   reddit(){
+    let str = `The Reddit state is ${this.state.reddit}`
     return (
-      <p className='top-twitch'>Reddit State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 
   espn(){
+    let str = `The ESPN state is ${this.state.espn}`
     return (
-      <p className='top-twitch'>ESPN State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 
   movies(){
+    let str = `The Movies state is ${this.state.movies}`
     return (
-      <p className='top-twitch'>Movies State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 
   ign(){
+    let str = `The IGN state is ${this.state.ign}`
     return (
-      <p className='top-twitch'>IGN State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 
   weather(){
+    let str = `The weather state is ${this.state.weather}`
     return (
-      <p className='top-twitch'>Weather State is true</p>
+      <p className='top-twitch'>{str}</p>
     )
   }
 

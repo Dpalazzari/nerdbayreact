@@ -69,6 +69,6 @@
 
 .component-renderings {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-flow: row wrap;
 }
