@@ -2,20 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ButtonMenu from './components/ButtonMenu'
 import { clone, classSetter } from './helperFunctions/helpers'
+import TwitchFrame from './components/twitchFrame'
 import './index.css';
 
 class Bay extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      twitch: false,
       top: false,
+      twitch: false,
       espn: false,
-      ign: false,
-      movies: false,
-      hacker: false,
       reddit: false,
-      weather: false
+      hacker: false,
+      ign: false,
+      weather: false,
+      movies: false
     }
   }
 
@@ -43,9 +44,8 @@ class Bay extends React.Component {
   }
 
   top(){
-    let str = `The Top Twitch state is ${this.state.top}`
     return (
-      <p className='top-twitch'>{str}</p>
+      <TwitchFrame key='topTwitch' />
     )
   }
 

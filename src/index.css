@@ -55,7 +55,7 @@
 .button-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 25%;
 }
 
@@ -69,6 +69,12 @@
 
 .component-renderings {
   display: flex;
-  /* justify-content: space-between; */
-  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-flow: column wrap;
+}
+
+.top-twitch-component {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
 }
